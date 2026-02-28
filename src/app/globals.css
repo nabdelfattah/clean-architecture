@@ -117,9 +117,14 @@ body {
     box-shadow: var(--shadow-lg);
   }
 
-  /* ================= focus ================= */
+  /* ================= states ================= */
   .ds-focus {
     outline: none;
     box-shadow: 0 0 0 var(--focus-ring-width) var(--focus-ring-color);
+  }
+
+  .ds-text-disabled {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
