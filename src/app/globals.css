@@ -1,9 +1,5 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @theme inline {
   --color-background: var(--background);
@@ -23,4 +19,107 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-montserrat);
+    color: var(--txt-black);
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  img,
+  svg,
+  video {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+/* -------------------------------------------------- */
+/* Design System Utilities                             */
+/* -------------------------------------------------- */
+@layer utilities {
+  /* ================= BACKGROUND ================= */
+  .ds-bg-primary {
+    background-color: var(--color-primary);
+  }
+  .ds-bg-primary-hover:hover {
+    background-color: var(--color-primary-hover);
+  }
+  .ds-bg-yellow {
+    background-color: var(--color-yellow);
+  }
+  .ds-bg-blue {
+    background-color: var(--bg-blue);
+  }
+  .ds-bg-blue-light {
+    background-color: var(--bg-blue-light);
+  }
+  .ds-bg-gray-light {
+    background-color: var(--bg-gray-light);
+  }
+  .ds-bg-blue-dark {
+    background-color: var(--txt-black);
+  }
+
+  /* ================= color ================= */
+  .ds-txt-black {
+    color: var(--txt-black);
+  }
+  .ds-txt-gray {
+    color: var(--txt-gray);
+  }
+  .ds-txt-gray-light {
+    color: var(--txt-gray-light);
+  }
+  .ds-txt-red {
+    color: var(--color-red);
+  }
+
+  /* ================= TYPOGRAPHY  ================= */
+  .ds-font-playfair {
+    font-family: var(--font-playfair);
+  }
+  .ds-font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+
+  .ds-leading-full {
+    line-height: var(--leading-full);
+  }
+
+  /* ================= BORDERS ================= */
+  .ds-border-primary {
+    border: var(--border-primary);
+  }
+  .ds-border-gray {
+    border: var(--border-gray);
+  }
+
+  /* ================= radius ================= */
+  .ds-radius-xs {
+    border-radius: var(--radius-xs);
+  }
+
+  /* ================= shadow ================= */
+  .ds-shadow-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  .ds-shadow-md {
+    box-shadow: var(--shadow-md);
+  }
+  .ds-shadow-lg {
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* ================= focus ================= */
+  .ds-focus {
+    outline: none;
+    box-shadow: 0 0 0 var(--focus-ring-width) var(--focus-ring-color);
+  }
 }
