@@ -5,7 +5,7 @@ A scalable Clean Architecture boilerplate structure for Next.js frontend project
 ## 📸 Preview
 
 <p>
-  <img src="./docs/landing-page.png" alt="Landing Page" width="800"/>
+  <img src="./docs/landing-page.png" alt="Landing Page" width="600"/>
 </p>
 
 ### 🚀 Tech Stack
