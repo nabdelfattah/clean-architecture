@@ -12,9 +12,12 @@
   --bg-gray-light: #f5f6f7;
 
   --txt-black: #05162c;
+  --txt-white: #fff;
   --txt-gray: #404448;
   --txt-gray-light: #6d7379;
 
+  --txt-lg: 2rem; /* 32px */
+  --txt-xl: 2.5rem; /* 40px */
   --font-playfair: "Playfair Display", serif;
   --font-montserrat: "Montserrat", sans-serif;
 
