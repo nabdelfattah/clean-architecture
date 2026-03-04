@@ -1,9 +1,10 @@
-import Image from "next/image";
-import Title from "../components/atoms/title";
+import { Title } from "@/src/components/";
+import { Header } from "@/src/components";
 
 export default function Home() {
   return (
     <div className="">
+      <Header />
       <main className="">
         <Title type="h1">Clean Architecture</Title>
         <Title type="h2">secondary title</Title>
