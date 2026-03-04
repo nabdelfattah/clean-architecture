@@ -2,9 +2,10 @@ import { Logo, ThemeToggle, LangSwitcher } from "@/src/components";
 
 export default function Header() {
   return (
-    <header className="flex justify-between pt-14 pb-7">
+    <header className="ds-container flex justify-between pt-8 pb-4">
       <Logo />
-      <div>
+      <nav>{/* navigatin goes here */}</nav>
+      <div className="flex items-center gap-5">
         <LangSwitcher />
         <ThemeToggle />
       </div>
