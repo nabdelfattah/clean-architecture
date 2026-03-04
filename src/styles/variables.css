@@ -3,7 +3,7 @@
 /* -------------------------------------------------- */
 :root {
   --color-primary: #145db8;
-  --color-primary-hover: #0f4a8c;
+  --color-blue-hover: #0f4a8c;
   --color-red: #fc4b4e;
   --color-yellow: #f9e000;
 
@@ -12,6 +12,7 @@
   --bg-gray-light: #f5f6f7;
 
   --txt-black: #05162c;
+  --txt-blue: #145db8;
   --txt-white: #fff;
   --txt-gray: #404448;
   --txt-gray-light: #6d7379;

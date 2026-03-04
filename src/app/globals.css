@@ -49,8 +49,9 @@ body {
   .ds-bg-primary {
     background-color: var(--color-primary);
   }
-  .ds-bg-primary-hover:hover {
-    background-color: var(--color-primary-hover);
+
+  .ds-bg-blue-hover {
+    background-color: var(--color-blue-hover);
   }
   .ds-bg-yellow {
     background-color: var(--color-yellow);
@@ -71,6 +72,9 @@ body {
   /* ================= color ================= */
   .ds-txt-black {
     color: var(--txt-black);
+  }
+  .ds-txt-blue {
+    color: var(--txt-blue);
   }
   .ds-txt-white {
     color: var(--txt-white);
@@ -115,6 +119,21 @@ body {
   .ds-radius-xs {
     border-radius: var(--radius-xs);
   }
+  .ds-radius-sm {
+    border-radius: var(--radius-sm);
+  }
+  .ds-radius-md {
+    border-radius: var(--radius-md);
+  }
+  .ds-radius-lg {
+    border-radius: var(--radius-lg);
+  }
+  .ds-radius-xl {
+    border-radius: var(--radius-xl);
+  }
+  .ds-radius-2xl {
+    border-radius: var(--radius-2xl);
+  }
 
   /* ================= shadow ================= */
   .ds-shadow-sm {
@@ -136,5 +155,13 @@ body {
   .ds-text-disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  .ds-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
