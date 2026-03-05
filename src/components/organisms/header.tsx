@@ -2,6 +2,7 @@
 
 import useReveal from "@/src/animations/reveal";
 import { Logo, ThemeToggle, LangSwitcher } from "@/src/components";
+import { changeLocaleAction } from "@/src/i18n/locale";
 import { routes } from "@/src/utils/routes";
 import Link from "next/link";
 
@@ -19,7 +20,7 @@ export default function Header() {
         ))}
       </nav>
       <div className="flex items-center gap-5">
-        <LangSwitcher />
+        <LangSwitcher changeLocaleAction={changeLocaleAction} />
         <ThemeToggle />
       </div>
     </header>
