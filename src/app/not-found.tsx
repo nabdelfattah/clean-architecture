@@ -1,7 +1,7 @@
 "use client";
+
 import "./globals.css";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import { Button, Title, Text } from "@/src/components";
 import LottieNoData from "@/src/assets/lottie/no-data.json";
 

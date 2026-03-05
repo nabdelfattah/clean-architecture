@@ -3,7 +3,10 @@
 /* -------------------------------------------------- */
 :root {
   --color-primary: #145db8;
+  --color-primary-darkmode: hsl(213, 80%, 60%);
+
   --color-blue-hover: #0f4a8c;
+
   --color-red: #fc4b4e;
   --color-yellow: #f9e000;
 
@@ -12,10 +15,18 @@
   --bg-gray-light: #f5f6f7;
 
   --txt-black: #05162c;
+  --txt-black-darkmode: #fff;
+
   --txt-blue: #145db8;
+  --txt-blue-darkmode: hsl(213, 80%, 60%);
+
   --txt-white: #fff;
+
   --txt-gray: #404448;
+  --txt-gray-darkmode: #e9ebec;
+
   --txt-gray-light: #6d7379;
+  --txt-gary-light-darkmode: #bcbfc3;
 
   --txt-lg: 2rem; /* 32px */
   --txt-xl: 2.5rem; /* 40px */
@@ -26,6 +37,8 @@
   --leading-full: 100%;
 
   --border-primary: 1px solid var(--color-primary);
+  --border-primary-darkmode: 1px solid var(--color-primary-darkmode);
+
   --border-gray: 1px solid #99a2ab;
 
   --radius-xs: 4px;
@@ -42,4 +55,13 @@
   /* Focus */
   --focus-ring-color: var(--color-primary);
   --focus-ring-width: 2px;
+}
+
+:root.dark {
+  --color-primary: var(--color-primary-darkmode);
+  --txt-black: var(--txt-black-darkmode);
+  --txt-blue: var(--txt-blue-darkmode);
+  --txt-gray: var(--txt-gray-darkmode);
+  --txt-gray-light: var(--txt-gary-light-darkmode);
+  --border-primary: var(--border-primary-darkmode);
 }
